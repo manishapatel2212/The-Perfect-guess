@@ -1,21 +1,4 @@
 # The-Perfect-guess
 
+If the player's guess is higher than the actual number, the program displays "lower number please".Similarly if the user's guess is too low then the program prints "higher  number please".When the user guesses the correct number within the limited attempts,the no.of guesses the player used to arrive at the number.
 
-import random
-n = random.randint(1,100)
-a = -1
-guesses = 0
-limit = 7
-while(a !=n):
-    guesses += 1
-    if(guesses<=limit):
-        a = int(input("Guess the number(1 to 100):"))
-        if(n>a):
-           print("Higher number Please..")
-        elif(n<a):
-            print("Lower number Please..")    
-    else:
-        print("Game over Tryy next time")
-
-    
-print(f"You guess the number {n} in {guesses} attempts")
